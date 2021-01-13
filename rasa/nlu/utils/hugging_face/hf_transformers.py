@@ -122,7 +122,7 @@ class HFTransformersNLP(Component):
             self.model_weights, cache_dir=self.cache_dir
         )
         self.model = model_class_dict[self.model_name].from_pretrained(
-            self.model_weights, cache_dir=self.cache_dir
+            self.model_weights, cache_dir=self.cache_dir, from_pt=True
         )
 
         # Use a universal pad token since all transformer architectures do not have a
