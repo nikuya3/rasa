@@ -55,6 +55,8 @@ class RasaFileImporter(TrainingDataImporter):
         )
 
     async def get_nlu_data(self, language: Optional[Text] = "en") -> TrainingData:
+        lang = self.config.get("language")
+        language = lang if lang else language
         return utils.training_data_from_paths(self._nlu_files, language)
 
     async def get_domain(self) -> Domain:
