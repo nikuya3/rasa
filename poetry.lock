@@ -2970,7 +2970,7 @@ description = "State-of-the-art Natural Language Processing for TensorFlow 2.0 a
 name = "transformers"
 optional = true
 python-versions = ">=3.6.0"
-version = "2.11.0"
+version = "4.2.0"
 
 [package.dependencies]
 filelock = "*"
@@ -4978,8 +4978,8 @@ tqdm = [
     {file = "tqdm-4.56.0.tar.gz", hash = "sha256:fe3d08dd00a526850568d542ff9de9bbc2a09a791da3c334f3213d8d0bbbca65"},
 ]
 transformers = [
-    {file = "transformers-2.11.0-py3-none-any.whl", hash = "sha256:b3e5198266f2a4b14841c70427cad46b89f473e6b0d0d3ab7461bf775f31631d"},
-    {file = "transformers-2.11.0.tar.gz", hash = "sha256:8de20f03a94ebf16d98610a7df0acc6ba68c80bd44605cf5ad4300c642a7b57a"},
+    {file = "transformers-4.2.0-py3-none-any.whl", hash = "sha256:3cf312b1f1c7a5cb61a0320af8a40e3631d6669be1217f9900a6eef8c9c5224a"},
+    {file = "transformers-4.2.0.tar.gz", hash = "sha256:680a338c069720d03a7b85673e73e9bb89a7d91d5ed9db202750745f0ed003d7"},
 ]
 twilio = [
     {file = "twilio-6.45.4.tar.gz", hash = "sha256:ccab1e0831486e5e3833e2aab5a677453ef2a88aed3d988b6831b876ebb0374d"},

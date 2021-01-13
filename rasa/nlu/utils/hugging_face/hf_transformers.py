@@ -454,11 +454,14 @@ class HFTransformersNLP(Component):
             Sequence level representations from the language model.
         """
         model_outputs = self.model(
-            np.array(padded_token_ids), attention_mask=np.array(batch_attention_mask)
+            input_ids=np.array(padded_token_ids),
+            attention_mask=np.array(batch_attention_mask),
+            return_dict=True,
+            output_hidden_states=True
         )
 
         # sequence hidden states is always the first output from all models
-        sequence_hidden_states = model_outputs[0]
+        sequence_hidden_states = model_outputs.hidden_states[-1]
 
         sequence_hidden_states = sequence_hidden_states.numpy()
         return sequence_hidden_states
